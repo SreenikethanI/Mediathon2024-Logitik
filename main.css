@@ -66,3 +66,21 @@ nav {
     }
   }
 }
+
+
+.portfolio-container > .image-place {
+  padding : 75px;
+  display : grid;
+  grid-template-columns: repeat(3, calc(100% / 3));
+
+  .img-col{
+    border: 2px dotted gray;
+    display: flex;
+    flex-direction: column;
+    gap: 10pt;
+
+    > img {
+      border-radius: 10px;
+    }
+  }
+}
