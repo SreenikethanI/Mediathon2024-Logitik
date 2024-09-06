@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/* https://coolors.co/00393d-24948e-c2fff2-e2aa78-f7d5a1-026fa1-2999d0-5eabbf-502f2a-a9cd89 */
+
+* {
+  color-scheme: dark;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+}
+h1 {
+  text-align: center;
+  font-variant: small-caps;
+  padding-top: 2em;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Sora", sans-serif;
+  /* font-family: montserrat; */
+  background-color: #001427;
+  color: #F4D58D;
+}
+
+#content {
+  padding: 8pt;
+}
+
+nav {
+  background-color: #708D81;
+  color: #FFFCF2;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  /* overflow-x: auto;
+  text-wrap: nowrap; */
+
+  > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+    flex-wrap: wrap;
+    padding-left: 0;
+
+    > li {
+      display: inline-block;
+      font-weight: bold;
+      user-select: none;
+
+      > a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+          color: #595959;
+          text-decoration: underline;
+        }
+        &:visited {
+          color: inherit;
+        }
+      }
+    }
+  }
+}
+
+.portfolio-container{
+  display : flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio-container > .image-place {
+  padding: 75px;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  column-gap: 10pt;
+
+  .img-col {
+    border: 2px dotted gray;
+    display: flex;
+    flex-direction: column;
+    gap: 10pt;
+
+    > img {
+      border-radius: 10px;
+    }
+  }
+}
+
+.img-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+
+  > .card {
+    height: 450px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 25px 60px;
+    border-radius: 20px;
+
+    > img {
+      height: 215px;
+      width: 215px;
+      object-fit: cover;
+      border-radius: 1000000px;
+    }
+
+    > .title, .subtitle {
+      font-weight: bold;
+      font-size: 40px;
+      text-align: center;
+      color: white;
+    }
+  }
+}

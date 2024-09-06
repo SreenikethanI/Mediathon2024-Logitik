@@ -1,4 +1,10 @@
-# Logitik | Mediathon 2024
-The
+# Logitik 🔥✨ | Mediathon 2024
 
-[imglinks](https://drive.google.com/drive/folders/1-0meqGNo_MO_zjm0EeRBHhmZyyAB_jM4)
+Team members:
+
+| ID | Name | Contribution |
+| --- | --- | --- |
+| 2022A7PS0034U | Sreenikethan Iyer  | Web Development |
+| 2022A7PS0019U | Joseph Cijo        | Web Development |
+| 2022A7PS0034U | Adithya Nandakumar | Web Development |
+| 2022A7PS0034U | Ryan Abraham       | Photography |
