@@ -50,6 +50,7 @@ nav {
     > li {
       display: inline-block;
       font-weight: bold;
+      user-select: none;
 
       > a {
         text-decoration: none;
@@ -69,11 +70,12 @@ nav {
 
 
 .portfolio-container > .image-place {
-  padding : 75px;
-  display : grid;
-  grid-template-columns: repeat(3, calc(100% / 3));
+  padding: 75px;
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  column-gap: 10pt;
 
-  .img-col{
+  .img-col {
     border: 2px dotted gray;
     display: flex;
     flex-direction: column;
@@ -85,9 +87,9 @@ nav {
   }
 }
 
-.img-col{
-  display :  flex;
-  flex-direction : column;
+.img-col {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
