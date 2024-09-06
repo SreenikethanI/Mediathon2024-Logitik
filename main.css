@@ -2,6 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 /* https://coolors.co/00393d-24948e-c2fff2-e2aa78-f7d5a1-026fa1-2999d0-5eabbf-502f2a-a9cd89 */
 
+:root {
+  --breakpoint: abc;
+  --gap: 25pt;
+}
+
+::selection {
+  background-color: #708d81;
+  color: black;
+}
+
 * {
   color-scheme: dark;
   max-width: 100%;
@@ -14,28 +24,43 @@ h1 {
   text-align: center;
   font-variant: small-caps;
   padding-top: 2.2em;
+  font-size: 3.25em;
+  user-select: none;
+}
+
+img {
+  user-select: none;
 }
 
 body {
   padding: 0;
   margin: 0;
   font-family: "Sora", sans-serif;
-  /* font-family: montserrat; */
   background-color: #001427;
-  color: #F4D58D;
+  color: #f4d58d;
 }
 
 #content {
   padding: 8pt;
 }
 
+#banner {
+  background-image: url("assets/top.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0px;
+  padding: 0px;
+  /* TODO: remove bottom padding somehow */
+}
+
 nav {
   z-index: 1000;
-  background-color: #708D81;
-  color: #FFFCF2;
+  background-color: #708d81;
+  color: #fffcf2;
   padding: 10px;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: 0; left: 0; right: 0;
   /* overflow-x: auto;
   text-wrap: nowrap; */
 
@@ -69,8 +94,11 @@ nav {
   }
 }
 
-.portfolio-container{
-  display : flex;
+@media (max-width: 768px) {
+}
+
+.portfolio-container {
+  display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -78,14 +106,14 @@ nav {
 .portfolio-container > .image-place {
   padding: 75px;
   display: grid;
-  grid-template-columns: repeat(3, calc((100% - 100pt) / 3 - 10pt));
-  column-gap: 50pt;
+  grid-template-columns: repeat(3, calc((100% - 2 * var(--gap)) / 3));
+  column-gap: var(--gap);
 
   .img-col {
     /* border: 2px dotted gray; */
     display: flex;
     flex-direction: column;
-    gap: 50pt;
+    gap: var(--gap);
     justify-content: flex-start;
 
     img {
@@ -136,10 +164,26 @@ nav {
       border-radius: 1000000px;
     }
 
-    > .title, .subtitle {
+    > .title,
+    .subtitle {
       text-align: center;
     }
-    > .title {font-size: 2em; font-weight: bold; color: white;}
-    > .subtitle {font-size: 1.25em;}
+    > .title {
+      font-size: 2em;
+      font-weight: bold;
+      color: white;
+    }
+    > .subtitle {
+      font-size: 1.25em;
+    }
   }
+}
+
+footer {
+  background-color: #708d81;
+  color: #fffcf2;
+  text-align: center;
+  margin-top: 10pt;
+  padding-top: 10pt;
+  padding-bottom: 10pt;
 }
