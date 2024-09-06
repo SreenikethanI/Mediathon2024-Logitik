@@ -156,11 +156,19 @@ nav {
 
 /* ---- About us ------------------------------------------------ */
 
-.about-us .banner-wave {
-  /* width: calc(100% + 10px); */
-  width: 100%;
-  transform: rotate(180deg);
-  position: absolute;
+.about-us {
+  background-image: url("assets/top_darkened.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding-bottom: 20pt;
+
+  .banner-wave {
+    /* width: calc(100% + 10px); */
+    width: 100%;
+    transform: rotate(180deg);
+    position: absolute;
+  }
 }
 
 .about-us-cards {
@@ -179,11 +187,10 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #001427;
+    background-color: rgb(0, 20, 39, 0.7);
     backdrop-filter: blur(10px);
     padding: 40px 20px;
     border-radius: 20px;
-    opacity: 80%;
 
     > img {
       height: 200px;
@@ -213,7 +220,6 @@ footer {
   background-color: #708d81;
   color: #fffcf2;
   text-align: center;
-  margin-top: 20pt;
   padding-top: 10pt;
   padding-bottom: 10pt;
 }
