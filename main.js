@@ -1,6 +1,4 @@
 function init() {
-    // TODO: remove spundi
-
     const navbar = document.getElementById('navbar');
     navbar.querySelectorAll("a").forEach((entry) => {
         // we use data attributes here
@@ -15,6 +13,8 @@ function init() {
             window.scroll({ top: y, behavior: 'smooth' });
         });
     });
+
+    document.getElementById("loader-background").classList.add("complete");
 }
 
 window.addEventListener("load", init);
