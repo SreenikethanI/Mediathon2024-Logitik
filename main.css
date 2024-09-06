@@ -21,8 +21,8 @@ body {
   margin: 0;
   font-family: "Sora", sans-serif;
   /* font-family: montserrat; */
-  /* background-color: #24948e;
-  color: #c2fff2; */
+  background-color: #001427;
+  color: #F4D58D;
 }
 
 #content {
@@ -30,8 +30,8 @@ body {
 }
 
 nav {
-  background-color: #1f1f1f;
-  color: #026fa1;
+  background-color: #708D81;
+  color: #FFFCF2;
   padding: 10px;
   position: sticky;
   top: 0;
@@ -68,11 +68,16 @@ nav {
   }
 }
 
-
+.portfolio-container{
+  display : flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .portfolio-container > .image-place {
   padding: 75px;
   display: grid;
-  grid-template-columns: repeat(3, 25%);
+  grid-template-columns: repeat(3, 33%);
   column-gap: 10pt;
 
   .img-col {
@@ -95,6 +100,12 @@ nav {
 }
 
 .about-us-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+
   > .card {
     height: 450px;
     width: 340px;
@@ -108,7 +119,9 @@ nav {
 
     > img {
       height: 215px;
+      width: 215px;
       object-fit: cover;
+      border-radius: 1000000px;
     }
 
     > .title, .subtitle {
