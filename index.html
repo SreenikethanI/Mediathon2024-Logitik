@@ -11,77 +11,86 @@
   </head>
 
   <body>
+    <!-- Loader -->
+    <div id="loader-background">
+      
+    </div>
+
     <!-- Navbar -->
-    <nav>
+    <nav id="navbar">
       <ul>
         <!-- Top Of Page -->
-        <li><a href="#home">Home</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#about-us">About Us</a></li>
+        <li><a data-heading-id="home">Home</a></li>
+        <li><a data-heading-id="portfolio">Portfolio</a></li>
+        <li><a data-heading-id="about-us">About Us</a></li>
       </ul>
     </nav>
 
     <!-- The main "body" -->
+    <!-- Hero -->
     <div id="banner">
-      <h1 id="home">Welcome to BITS Pilani Dubai Campus</h1>
-      <p style="text-align: center">
+      <h1 id="home">Welcome to<br>BITS Pilani Dubai Campus</h1>
+      <p id="home-p" style="text-align: center">
         Enjoy a curated collection of campus photos, captured by yours truly!
       </p>
-      <img src="assets/top.svg" style="width: 100%" />
+      <img src="assets/top.svg" class="banner-wave" />
     </div>
-    <div id="content">
-      <div class="portfolio-container">
-        <h1 id="portfolio">Portfolio</h1>
-        <div class="image-place">
-          <div class="img-col">
-            <img src="assets/portfolio/busssssssss.jpg" />
-            <img src="assets/portfolio/tree.jpg" />
-            <img src="assets/portfolio/Mahesh-5.jpeg" />
-            <img src="assets/portfolio/Mahesh-4.jpeg" />
-            <img src="assets/portfolio/rayy.jpg" />
-          </div>
-          <div class="img-col">
-            <img src="assets/portfolio/briefcase.jpg" />
-            <img src="assets/portfolio/Mahesh-2.jpeg" />
-            <img src="assets/portfolio/210.jpg" />
-            <img src="assets/portfolio/drums.jpg" />
-            <img src="assets/portfolio/bitsbilanibubaibampus.jpg" />
-          </div>
-          <div class="img-col">
-            <img src="assets/portfolio/Mahesh-3.jpeg" />
-            <img src="assets/portfolio/taps.jpg" />
-            <img src="assets/portfolio/Mahesh-1.jpeg" />
-            <img src="assets/portfolio/woodpeck.jpg" />
-            <img src="assets/portfolio/shadow.jpg" />
-          </div>
+
+    <!-- Container -->
+    <div class="portfolio-container">
+      <h1 id="portfolio">Portfolio</h1>
+      <div class="image-place">
+        <div class="img-col">
+          <img src="assets/portfolio/busssssssss.jpg" />
+          <img src="assets/portfolio/tree.jpg" />
+          <img src="assets/portfolio/Mahesh-5.jpeg" />
+          <img src="assets/portfolio/Mahesh-4.jpeg" />
+          <img src="assets/portfolio/rayy.jpg" />
+        </div>
+        <div class="img-col">
+          <img src="assets/portfolio/210.jpg" />
+          <img src="assets/portfolio/Mahesh-2.jpeg" />
+          <img src="assets/portfolio/briefcase.jpg" />
+          <img src="assets/portfolio/drums.jpg" />
+          <img src="assets/portfolio/bitsbilanibubaibampus.jpg" />
+        </div>
+        <div class="img-col">
+          <img src="assets/portfolio/Mahesh-3.jpeg" />
+          <img src="assets/portfolio/taps.jpg" />
+          <img src="assets/portfolio/Mahesh-1.jpeg" />
+          <img src="assets/portfolio/woodpeck.jpg" />
+          <img src="assets/portfolio/shadow.jpg" />
         </div>
       </div>
-
-      <!-- SOMETHING -->
     </div>
 
     <!-- About us -->
-    <h1 id="about-us">About Us</h1>
-    <div class="about-us-container">
-      <div class="card">
-        <img src="assets/pfps/sreeni.jpg" alt="Sreenikethan Iyer" />
-        <span class="title">Sreenikethan Iyer</span>
-        <span class="subtitle">Web design</span>
-      </div>
-      <div class="card">
-        <img src="assets/pfps/nandu.jpeg" alt="Adithya Nandakumar" />
-        <span class="title">Adithya Nandakumar</span>
-        <span class="subtitle">Web design</span>
-      </div>
-      <div class="card">
-        <img src="assets/pfps/joseph.jpg" alt="Joseph Cijo" />
-        <span class="title">Joseph Cijo</span>
-        <span class="subtitle">Web design</span>
-      </div>
-      <div class="card">
-        <img src="assets/pfps/ryan.png" alt="Ryan Abraham" />
-        <span class="title">Ryan Abraham</span>
-        <span class="subtitle">Photography</span>
+    <div class="about-us">
+      <img src="assets/top.svg" class="banner-wave" />
+      <br /><br /><br /><br />
+
+      <h1 id="about-us" class=".no-forehead">About Us</h1>
+      <div class="about-us-cards">
+        <div class="card">
+          <img src="assets/pfps/sreeni.jpg" alt="Sreenikethan Iyer" />
+          <span class="title">Sreenikethan Iyer</span>
+          <span class="subtitle">Website Design<br />Website Development</span>
+        </div>
+        <div class="card">
+          <img src="assets/pfps/nandu.jpeg" alt="Adithya Nandakumar" />
+          <span class="title">Adithya Nandakumar</span>
+          <span class="subtitle">Website Design<br />Website Development</span>
+        </div>
+        <div class="card">
+          <img src="assets/pfps/joseph.jpg" alt="Joseph Cijo" />
+          <span class="title">Joseph Cijo</span>
+          <span class="subtitle">Website Design<br />Website Development</span>
+        </div>
+        <div class="card">
+          <img src="assets/pfps/ryan.png" alt="Ryan Abraham" />
+          <span class="title">Ryan Abraham</span>
+          <span class="subtitle"><br />Photography</span>
+        </div>
       </div>
     </div>
 

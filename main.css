@@ -2,33 +2,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 /* https://coolors.co/00393d-24948e-c2fff2-e2aa78-f7d5a1-026fa1-2999d0-5eabbf-502f2a-a9cd89 */
 
+/* ---- Global and general ------------------------------------------------ */
+
 :root {
-  --breakpoint: abc;
+  --breakpoint: 768px;
   --gap: 25pt;
+  --cutesra: "cute kawaii p~~~";
 }
 
 ::selection {
   background-color: #708d81;
   color: black;
+  text-shadow: none;
 }
 
 * {
   color-scheme: dark;
-  max-width: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Playfair Display", serif;
-}
 h1 {
+  font-family: "Playfair Display", serif;
   text-align: center;
   font-variant: small-caps;
-  padding-top: 2.2em;
   font-size: 3.25em;
   user-select: none;
 }
@@ -45,15 +40,7 @@ body {
   color: #f4d58d;
 }
 
-#banner {
-  background-image: url("assets/top.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  margin: 0px;
-  padding: 0px;
-  /* TODO: remove bottom padding somehow */
-}
+/* ---- Navbar ------------------------------------------------ */
 
 nav {
   z-index: 100;
@@ -64,8 +51,6 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  /* overflow-x: auto;
-  text-wrap: nowrap; */
 
   > ul {
     display: flex;
@@ -84,6 +69,7 @@ nav {
       > a {
         text-decoration: none;
         color: inherit;
+        cursor: pointer;
 
         &:hover {
           color: #595959;
@@ -97,8 +83,35 @@ nav {
   }
 }
 
-@media (max-width: 768px) {
+/* ---- Hero banner ------------------------------------------------ */
+
+#banner {
+  background-image: url("assets/top_darkened.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-size: 1.5em;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* text-shadow: 3px 3px 3px black; */
+
+  .banner-wave {
+    width: 100%;
+    /* width: 100%; */
+    position: absolute;
+    bottom: 0;
+  }
 }
+
+@media (max-width: var(--breakpoint)) {
+  /* TODO: responsive  */
+}
+
+/* ---- Portfolio ------------------------------------------------ */
 
 .portfolio-container {
   display: flex;
@@ -124,6 +137,7 @@ nav {
       filter: grayscale(100%);
       transition: all 0.25s ease;
       user-select: none;
+      max-width: 100%;
 
       &:hover {
         filter: grayscale(0%);
@@ -140,7 +154,16 @@ nav {
   align-items: center;
 }
 
-.about-us-container {
+/* ---- About us ------------------------------------------------ */
+
+.about-us .banner-wave {
+  /* width: calc(100% + 10px); */
+  width: 100%;
+  transform: rotate(180deg);
+  position: absolute;
+}
+
+.about-us-cards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,9 +179,11 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: #001427;
+    backdrop-filter: blur(10px);
     padding: 40px 20px;
     border-radius: 20px;
+    opacity: 80%;
 
     > img {
       height: 200px;
@@ -182,11 +207,13 @@ nav {
   }
 }
 
+/* ---- Footer ------------------------------------------------ */
+
 footer {
   background-color: #708d81;
   color: #fffcf2;
   text-align: center;
-  margin-top: 10pt;
+  margin-top: 20pt;
   padding-top: 10pt;
   padding-bottom: 10pt;
 }
