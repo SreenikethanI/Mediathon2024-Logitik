@@ -93,3 +93,29 @@ nav {
   justify-content: center;
   align-items: center;
 }
+
+.about-us-container {
+  > .card {
+    height: 450px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 25px 60px;
+    border-radius: 20px;
+
+    > img {
+      height: 215px;
+      object-fit: cover;
+    }
+
+    > .title, .subtitle {
+      font-weight: bold;
+      font-size: 40px;
+      text-align: center;
+      color: white;
+    }
+  }
+}
